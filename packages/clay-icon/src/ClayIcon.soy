@@ -33,7 +33,7 @@
 	{/let}
 
 	<svg {$attributes}>
-		<title>{$title ?: $id ?: $symbol}</title>
+		<span class="sr-only">{$title ?: $id ?: $symbol}</span>
 		<use xlink:href="{$spritemap}#{$symbol}" />
 	</svg>
 {/template}
